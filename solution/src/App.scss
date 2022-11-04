@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: beige;
+  .App {
+    display: grid;
+    padding: 2rem;
+    grid-template-rows: 100px 1fr;
+
+    .moviecontainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      @media (max-width: 800px) {
+      }
+      @media (max-width: 600px) {
+        justify-content: space-around;
+      }
+    }
+  }
+}
